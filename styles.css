@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.5s;
+    color: white; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+.navbar-brand img{
+    width: 15%;
+    height: auto;
+}
+
+.navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar.fixed-top.bg-colored {
+    background-color: #a3000088; /* Change to desired color */
+}
+nav .navbar-nav li a{
+    color: white !important;
+    }
+
+#carouselExampleIndicators .carousel-inner img {
+    object-fit: cover;
+    height: 100vh;
+    animation: zoomOut 10s infinite alternate;
+}
+
+.prev-1st,
+.prev-2nd {
+  filter: invert(1);
+}
+
+.prev-1st {
+    position: absolute;
+    bottom: 50%;
+    left: -25px;
+}
+
+.prev-2nd {
+    position: absolute;
+    bottom: 50%;
+    right: -25px;
+}
+
+.caro-text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 8px#ff0000;
+}
+
+.caro-text h1{
+    font-weight: bold;
+}
+
+.Welcome{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Welcome h1{
+    color: #a30000;
+    margin-bottom: 1rem;
+}
+
+.Accommodation{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.Accommodation h2{
+    margin-bottom: 2rem;
+    color: #a30000;
+}
+
+.Accommodation img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.Affair {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.Affair h2{
+    color: #a30000;
+    margin-bottom: 2rem;
+}
+
+footer{
+    color: white;
+    background-color: #a30000;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+    /* background-color: white; */
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #f8f9fa; 
+}
+
+.social-icon i {
+    color: #ffffff; 
+    font-size: 20px;
+}
+
+
+
+/* .carousel-inner img:hover {
+    transform: scale(1.1);
+} */
+
+@keyframes zoomOut {
+    from {
+        transform: scale(1.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
